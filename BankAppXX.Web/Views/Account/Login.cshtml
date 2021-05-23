@@ -1,0 +1,20 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+
+<form asp-action="Login" asp-controller="Account" method="post">
+    <div>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div>
+        <input asp-for="Password" type="password" class="form-control" />
+    </div>
+    <div>
+        <input type="submit" class="btn" value="Giriş Yap" />
+    </div>
+</form>
+

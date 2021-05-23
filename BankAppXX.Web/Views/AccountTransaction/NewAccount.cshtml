@@ -1,0 +1,30 @@
+﻿@model NewAccountViewModel
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<span>merhaba</span>
+
+<form asp-action="NewAccount" asp-controller="AccountTransaction" method="post">
+
+    <div>
+        <label asp-for="UserId"></label>
+        <select asp-for="UserId" asp-items="ViewBag.allusers">
+        </select>
+    </div>
+
+
+    <div>
+        <label asp-for="AccountName"></label>
+        <input asp-for="AccountName" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Amount"></label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <input type="submit" value="Ekle" class="btn btn-success" />
+</form>

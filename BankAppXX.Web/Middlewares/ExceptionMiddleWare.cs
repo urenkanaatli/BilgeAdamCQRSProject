@@ -29,6 +29,7 @@ namespace BankAppXX.Web.Middlewares
 
                 //hatayı db ye yada bır dosyaya kaydedebilirlirim.
                 //dev
+                //dev2
 
 
                 await httpContext.Response.WriteAsync(ex.ToString());

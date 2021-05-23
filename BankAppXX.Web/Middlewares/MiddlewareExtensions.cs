@@ -12,16 +12,13 @@ namespace Microsoft.AspNetCore.Builder
 
         public static IApplicationBuilder UsePerformanceMiddleWare(this IApplicationBuilder builder)
         {
-
-
+            //
             return builder.UseMiddleware<PerformanceMiddleware>();
         }
 
         public static IApplicationBuilder UseExceptionMiddleWare(this IApplicationBuilder builder)
         {
-
-
-         return   builder.UseMiddleware<ExceptionMiddleWare>();
+            return builder.UseMiddleware<ExceptionMiddleWare>();
         }
     }
 }

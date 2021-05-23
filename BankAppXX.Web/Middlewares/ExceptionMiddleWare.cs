@@ -18,8 +18,7 @@ namespace BankAppXX.Web.Middlewares
 
         public async Task Invoke(HttpContext httpContext)
         {
-            //işlemler
-
+            //işlemlerim
             try
             {
                 await next(httpContext);
